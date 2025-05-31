@@ -1,0 +1,23 @@
+# font
+font-size=16
+font-family = BerkeleyMono Nerd Font
+
+# theme
+theme = mellow
+background-opacity = 0.9
+
+# mouse
+mouse-hide-while-typing = true
+mouse-scroll-multiplier = 2
+
+# keybinds new split
+keybind = alt+up=new_split:up
+keybind = alt+down=new_split:down
+keybind = alt+left=new_split:left
+keybind = alt+right=new_split:right
+
+# keybinds resize split
+keybind = shift+alt+up=resize_split:up,20
+keybind = shift+alt+down=resize_split:down,20
+keybind = shift+alt+left=resize_split:left,20
+keybind = shift+alt+right=resize_split:right,20
