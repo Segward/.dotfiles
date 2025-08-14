@@ -1,3 +1,7 @@
+# Load color definitions
+autoload -U colors
+colors
+
 # Function to get current git branch
 git_branch() {
   local branch
@@ -7,9 +11,13 @@ git_branch() {
   fi
 }
 
-# Set the prompt dynamically
+# Set the prompt
 set_prompt() {
-  PROMPT="%m %1~ $(git_branch) %# "
+  local green="%{$fg[green]%}"
+  local cyan="%{$fg[cyan]%}"
+  local yellow="%{$fg[yellow]%}"
+  local reset="%{$reset_color%}"
+  PROMPT="${cyan}%m ${green}%1~ ${yellow}$(git_branch)${reset} %# "
 }
 
 # Hook prompt update before each command
