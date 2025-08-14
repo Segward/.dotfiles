@@ -14,10 +14,11 @@ git_branch() {
 # Set the prompt
 set_prompt() {
   local green="%{$fg[green]%}"
+  local blue="%{$fg[blue]%}"
   local cyan="%{$fg[cyan]%}"
   local yellow="%{$fg[yellow]%}"
   local reset="%{$reset_color%}"
-  PROMPT="${cyan}%m ${green}%1~ ${yellow}$(git_branch)${reset} %# "
+  PROMPT="${blue}%* ${cyan}%m ${green}%1~ ${yellow}$(git_branch)${reset} %# "
 }
 
 # Hook prompt update before each command
