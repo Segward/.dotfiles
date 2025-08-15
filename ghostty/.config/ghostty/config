@@ -5,6 +5,7 @@ font-family = BerkeleyMono Nerd Font
 # theme
 theme = mellow
 background-opacity = 0.9
+background = "#111111"
 
 # mouse
 mouse-hide-while-typing = true
