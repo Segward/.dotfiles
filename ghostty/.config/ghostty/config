@@ -1,10 +1,10 @@
 # font
-font-size=16
+font-size=14
 font-family = BerkeleyMono Nerd Font
 
 # theme
 theme = mellow
-background-opacity = 0.9
+background-opacity = 1
 background = "#111111"
 
 # mouse
