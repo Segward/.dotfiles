@@ -24,3 +24,4 @@ set_prompt() {
 # Hook prompt update before each command
 autoload -U add-zsh-hook
 add-zsh-hook precmd set_prompt
+export PATH="/usr/local/opt/openjdk@21/bin:$PATH"
